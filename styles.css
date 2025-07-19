@@ -1,0 +1,123 @@
+body {
+   font-family: sans-serif;
+   background-color: white;
+   color: rgb(78, 78, 78);
+   line-height: 1.5;
+}
+
+header {
+    color: black;
+}
+
+nav header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav {
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    top : 5px ;
+    border-right: 3px solid rgb(78, 78, 78) ;
+}
+
+main {
+    position: absolute;
+    left: 350px;
+    margin: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    overflow-y: auto;
+    height: 88%;
+}
+
+nav ul li {
+    width: 100%;
+    margin-left: 0;
+    border-top: 1px solid  rgb(78, 78, 78);
+    padding-bottom: 1px;
+    padding-top: 1px;
+    position: relative;
+}
+
+nav a {
+    padding: 10px 30px;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    color: rgb(78, 78, 78);
+}
+
+section header {
+    font-weight: bold;
+    font-size: 28px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+main ul li {
+    padding-bottom: 15px;
+}
+
+code {
+    display: block;
+    background-color: rgb(235, 235, 235);
+    padding: 10px;
+    line-height: 2;
+    border-radius: 5px;
+    text-align: left;
+    margin: 10px;
+}
+
+.spc {
+    padding-top: 20px ;
+}
+
+@media only screen and (max-width: 815px) {
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 290px;
+    left: 30px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
